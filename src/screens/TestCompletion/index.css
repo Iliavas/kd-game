@@ -1,0 +1,24 @@
+.header{
+    background: #0D42FF;
+    color: white;
+    position: fixed;
+    width: calc(100% - 60px);
+    height: 90vh;
+    padding-left: 28px;
+    font-size: 20px;
+    padding-right: 36px;
+    padding-top: 16px;
+    font-weight: 600;
+}
+
+.content{
+    width: calc(100% - 32px);
+    height: 1000px;
+    background: #0F0F0F;
+    position: absolute;
+    border-radius: 16px 16px 0px 0px;
+    margin-top: 100px;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+}

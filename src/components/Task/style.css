@@ -1,0 +1,28 @@
+.task__header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+}
+
+.task{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.task__formulation{
+    font-weight: 700;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tasks{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
