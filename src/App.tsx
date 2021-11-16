@@ -1,9 +1,9 @@
 import React from 'react';
 import { TestCompletion } from './screens/TestCompletion/TestCompletion';
-import {Corousel} from "./components/Corousel/index"
+import {MainScreen} from "./screens/MainScreen/MainScreen"
 function App() {
   return <div style={{marginTop:"50px"}}>
-    <Corousel onChange={()=>null}></Corousel>
+    <MainScreen></MainScreen>
   </div>
 }
 

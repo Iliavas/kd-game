@@ -21,6 +21,7 @@
     "react-native-parallax-scroll-view": "^0.21.3",
     "react-native-web": "^0.17.5",
     "react-scripts": "4.0.3",
+    "react-scroll": "^1.8.4",
     "react-swipeable": "^6.2.0",
     "typescript": "^4.4.4",
     "web-vitals": "^1.1.2"
@@ -52,6 +53,7 @@
   "devDependencies": {
     "@types/react-burger-menu": "^2.8.2",
     "@types/react-hammerjs": "^1.0.3",
+    "@types/react-scroll": "^1.8.3",
     "babel-plugin-react-native-web": "^0.17.5",
     "copy-webpack-plugin": "^9.1.0",
     "react-app-rewired": "^2.1.8"
