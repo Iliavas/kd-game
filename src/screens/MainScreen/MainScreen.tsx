@@ -11,8 +11,11 @@ export const MainScreen:React.FC = () =>{
     let [cas, setCase] = useState("")
     return(
         <div className="mainScreen">
-            <Slider></Slider>
-            <div className="header">Альманах практик будущего</div>
+            <div className="headWrap">
+                <Slider></Slider>
+                <div className="header">Альманах практик будущего</div>
+
+            </div>
             <div className="text">
                 <p >
                     <div className="h1">Игра-квест от кружкового движения</div> <br/><br/>

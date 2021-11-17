@@ -1,5 +1,5 @@
 .defBtn{
-    width: 343px;
+    width: 320px;
     height: 43px;
     outline: none;
     border: none;
@@ -16,6 +16,13 @@
     background: #0D42FF !important;
     cursor: pointer;
 }
+@media (max-width: 320px) { 
+    .defBtn{
+        width: 230px;
+        height: 35px;
+    }
+}
+
 .disactive{
     cursor: unset;
     color:#858484 !important;
