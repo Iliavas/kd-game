@@ -1,0 +1,87 @@
+.header{
+    width: 320px;
+    height: 50px;
+    color: #000;
+    background-color: #fff;
+    font-size: 20px;
+    position: relative;
+    width: calc(100% - 72px);
+    right: -56px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+}
+.mainScreen{
+    width: 100vw;
+    height: 130vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #0F0F0F;
+}
+.text{
+    color:#ECECEC;
+    line-height: 22px;
+    font-size: 16px;
+    padding: 20px;
+
+}
+.h1{
+    line-height: 32px;
+    font-size: 24px;
+    text-align: center !important;
+    font-style: bold;
+}
+
+.h2{
+    color:#ECECEC;
+    line-height: 32px;
+    font-size: 24px;
+    font-style: bold;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.choosedCase{
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #A2A2A2;
+}
+
+.btn{
+    margin-top:25px;
+    margin-bottom: 15px;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.team{
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color:#ECECEC;
+    margin-top: 50px;
+}
+.copyright{
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color:#ECECEC;
+    margin-top: 20px;
+}
+.scrollToTop{
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color:#ECECEC;
+    margin-top: 20px;
+    cursor: pointer;
+    
+}

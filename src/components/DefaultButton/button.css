@@ -1,0 +1,25 @@
+.defBtn{
+    width: 343px;
+    height: 43px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    color:#ECECEC;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    font-style: bold;
+    align-items: center;
+    justify-content: center;
+    background: #0D42FF;
+    cursor: pointer;
+}
+.defBtn:hover{
+    color:#858484;
+    background: #3F3F3F;
+}
+.disactive{
+    cursor: unset;
+    color:#858484;
+    background: #3F3F3F;
+}
