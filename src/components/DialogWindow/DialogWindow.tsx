@@ -17,7 +17,7 @@ export const DialogWindow:react.FC<IDialogWindow> = (props) => {
             Тогда в вашей жизни изменится то-то и то-то а исчезнет то-то и то-то а потом вы вообще станене счастливым
         </div>
         <div className="buttons">
-            <DefaultButton onClick={props.onReject}>Еще подумаю</DefaultButton>
+            <DefaultButton type="outlined" onClick={props.onReject}>Еще подумаю</DefaultButton>
             <DefaultButton onClick={props.onAccept}>Да</DefaultButton>
         </div>
     </div>

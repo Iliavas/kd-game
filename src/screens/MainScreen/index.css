@@ -45,10 +45,11 @@
     margin-bottom: 15px;
 }
 .choosedCase{
+    margin-top: 10px;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-    color: #A2A2A2;
+    color: #A2A2A2 !important;
 }
 
 .btn{
@@ -56,6 +57,7 @@
     margin-bottom: 15px;
 }
 .wrapper{
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -83,5 +85,5 @@
     color:#ECECEC;
     margin-top: 20px;
     cursor: pointer;
-    
+
 }
