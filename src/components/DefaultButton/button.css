@@ -14,10 +14,6 @@
     background: #0D42FF;
     cursor: pointer;
 }
-.defBtn:hover{
-    color:#858484;
-    background: #3F3F3F;
-}
 .disactive{
     cursor: unset;
     color:#858484;

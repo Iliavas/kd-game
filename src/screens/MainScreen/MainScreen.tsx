@@ -7,9 +7,9 @@ import { animateScroll as scroll } from "react-scroll";
 import icon from "../../images/arrow-top.svg"
 import { Icon } from "@mui/material";
 
+
 export const MainScreen:React.FC = () =>{
     let [cas, setCase] = useState("")
-
     return(
         <div className="mainScreen">
             <Slider></Slider>
@@ -30,7 +30,9 @@ export const MainScreen:React.FC = () =>{
                 <Corousel onChange={(e)=>setCase(e)}></Corousel>
             </div>
             <div className="wrapper">
-                <DefaultButton class="btn" active={cas == ""? false:true} onClick={()=>null}> Вперед!</DefaultButton>  {/* перекидываем при клике на страницу с тестом */}
+                <DefaultButton class="btn" active={cas == ""? false:true} onClick={()=>{
+                    window.location.href = "/test/1"
+                }}> Вперед!</DefaultButton>  {/* перекидываем при клике на страницу с тестом */}
                 <div className="choosedCase">
                     {
                         cas == ""? 

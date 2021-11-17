@@ -3,15 +3,26 @@ import react from "react";
 
 import "./style.css";
 
-export const RadioButton:react.FC = () => {
-    return <div className="checkbox">
-        <Radio style={{color: "white", transform: "translateY(-10px)"}}></Radio>
+interface IRadio{
+    heading:string;
+    text:string;
+    active:boolean;
+    onClick:() => void;
+}
+
+export const RadioButton:react.FC<IRadio> = (props) => {
+    return <div className="checkbox" onClick={(e) => {
+        props.onClick()
+    }}>
+        <Radio onClick={(e) => {
+            props.onClick()
+        }} checked={props.active} style={{color: "white", transform: "translateY(-10px)"}}></Radio>
         <div>
             <div className="radio__heading">
-                Реакция на ухудшение здоровья
+                {props.heading}
             </div>
             <div className="radio__text">
-                Влияние стресса будет сразу же компенсироваться: как только возникнет какой-то симптом, человек начинает плохо себя чувствовать, сразу будет предложена контрмера. Это поможет своевременно отслеживать негативное влияние на здоровье.
+                {props.text}
             </div>
         </div>
     </div>

@@ -1,4 +1,4 @@
-.header{
+.header-test{
     background: #0D42FF;
     color: white;
     position: fixed;
@@ -9,16 +9,22 @@
     padding-right: 36px;
     padding-top: 16px;
     font-weight: 600;
+    top: 0;
 }
 
 .content{
     width: calc(100% - 32px);
-    height: 1000px;
+    min-height: 1000px;
     background: #0F0F0F;
     position: absolute;
     border-radius: 16px 16px 0px 0px;
-    margin-top: 100px;
+    margin-top: 30px;
     padding-top: 16px;
     padding-left: 16px;
     padding-right: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 40px;
 }

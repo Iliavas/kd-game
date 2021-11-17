@@ -1,0 +1,25 @@
+.dialog-window__header{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.dialog-window__sub-header{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.dialog-window__container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.buttons{
+    margin-top: 8px;
+    display: flex;
+    gap: 16px;
+}
