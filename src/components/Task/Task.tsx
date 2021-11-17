@@ -63,7 +63,7 @@ export const Task:react.FC<ITask> = (props) => {
                     onClick={() => {
                         setShowMenu(true)
                     }} 
-                    active={ isAccepted ? false : (active.length)?true:false}
+                    type={ isAccepted ? "disabled" : (active.length)? "contained":"disabled"}
                     >
                     {
                         isAccepted ? "Вы уже выбрали ответ" : active.length ? "Дальше" : "Подтвердить"

@@ -4,21 +4,16 @@
     color: #000;
     background-color: #fff;
     font-size: 20px;
+    font-weight: 600;
     position: relative;
-    width: calc(100% - 72px);
-    right: -56px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-left: 15px;
 }
 .mainScreen{
-    width: 100vw;
-    height: 130vh;
-    position: absolute;
-    left: 0;
-    top: 0;
+    margin-top: -50px;
     background-color: #0F0F0F;
 }
 .text{
@@ -26,13 +21,16 @@
     line-height: 22px;
     font-size: 16px;
     padding: 20px;
+    font-weight: 400;
 
 }
 .h1{
     line-height: 32px;
-    font-size: 24px;
+    font-size: 20px;
     text-align: center !important;
     font-style: bold;
+    font-weight: 600;
+
 }
 
 .h2{
@@ -43,12 +41,15 @@
     margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 15px;
+    font-weight: 600;
+
 }
 .choosedCase{
+    margin-top: 10px;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-    color: #A2A2A2;
+    color: #A2A2A2 !important;
 }
 
 .btn{
@@ -56,6 +57,7 @@
     margin-bottom: 15px;
 }
 .wrapper{
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -68,6 +70,7 @@
     text-align: center;
     color:#ECECEC;
     margin-top: 50px;
+    font-weight: 600;
 }
 .copyright{
     font-size: 14px;
@@ -82,6 +85,15 @@
     text-align: center;
     color:#ECECEC;
     margin-top: 20px;
+    margin-bottom: 40px;
     cursor: pointer;
-    
+
+}
+
+.headWrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap:10px;
 }

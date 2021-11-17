@@ -5,15 +5,17 @@ import "./index.css"
 import React, {useState} from "react";
 import { animateScroll as scroll } from "react-scroll";
 import icon from "../../images/arrow-top.svg"
-import { Icon } from "@mui/material";
 
 
 export const MainScreen:React.FC = () =>{
     let [cas, setCase] = useState("")
     return(
         <div className="mainScreen">
-            <Slider></Slider>
-            <div className="header">Альманах практик будущего</div>
+            <div className="headWrap">
+                <Slider></Slider>
+                <div className="header">Альманах практик будущего</div>
+
+            </div>
             <div className="text">
                 <p >
                     <div className="h1">Игра-квест от кружкового движения</div> <br/><br/>
@@ -30,15 +32,21 @@ export const MainScreen:React.FC = () =>{
                 <Corousel onChange={(e)=>setCase(e)}></Corousel>
             </div>
             <div className="wrapper">
-                <DefaultButton class="btn" active={cas == ""? false:true} onClick={()=>{
-                    window.location.href = "/test/1"
-                }}> Вперед!</DefaultButton>  {/* перекидываем при клике на страницу с тестом */}
+                <DefaultButton 
+                    class="btn"
+                    type={cas == ""? "disabled":"contained"} 
+                    onClick={
+                        ()=>{
+                        window.location.href = "/test/1"
+                    }}> 
+                Вперед!
+                </DefaultButton>  
                 <div className="choosedCase">
                     {
                         cas == ""? 
                             "Вы пока не выбрали кейс"
                                 :
-                            "Вы выбрали" + cas
+                            "Вы выбрали: " + cas
 
                     }
                 </div>

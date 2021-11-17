@@ -1,19 +1,22 @@
 import React from "react";
 import "./button.css"
+import Button from '@mui/material/Button';
 
 interface IDefBtn{
-    active?:boolean
     class?:string
     onClick: ()=>void
+    type?: "contained" | "outlined" | "disabled"
 }
 
 export const DefaultButton:React.FC<IDefBtn> = (props) =>{
     return(
-        <button
-            onClick={() =>props.active == false? null: props.onClick()}
-            className={"defBtn" + " " + props.class + " " + (props.active == false? "disactive":"")}
+        <Button
+            variant={props.type == ("contained" || "disabled") ? "contained":"outlined"}
+            disabled={props.type == "disabled"}
+            onClick={() =>props.type == "disabled"? null: props.onClick()}
+            className={"defBtn" + " " + props.class + " " + (props.type == "disabled" ? "disactive":"") + " " + (props.type == "outlined"? "outline":"")}
         >
             {props.children}
-        </button>
+        </Button>
     );
 }
